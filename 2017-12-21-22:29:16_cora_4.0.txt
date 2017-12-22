@@ -1,0 +1,58 @@
+Namespace(dataset='cora', repeating=10, train_size=4.0, validate=False, verbose=True)
+{   'default': {   'Model': 0,
+                   'Model11': 'nearest',
+                   'Model19': 'union',
+                   'Model_to_add_label': {'Model': 0},
+                   'Model_to_predict': {'Model': 0},
+                   'absorption_type': 'binary',
+                   'alpha': 1e-06,
+                   'connection': 'cc',
+                   'conv': 'gcn',
+                   'dataset': 'cora',
+                   'drop_inter_class_edge': False,
+                   'dropout': 0.5,
+                   'early_stopping': 0,
+                   'epochs': 200,
+                   'feature': 'bow',
+                   'k': -1,
+                   'lambda': 0,
+                   'layer_size': [16],
+                   'learning_rate': 0.02,
+                   'logdir': '',
+                   'logging': False,
+                   'max_degree': 2,
+                   'mu': 1,
+                   'name': '',
+                   'random_seed': 1513866558,
+                   't': 500,
+                   't2': 100,
+                   'taubin_f': 0.7,
+                   'taubin_lambda': 0.3,
+                   'taubin_mu': -0.31,
+                   'taubin_repeat': 5,
+                   'taubin_t': 0.2,
+                   'threads': 64,
+                   'train': True,
+                   'train_size': 4.0,
+                   'validate': False,
+                   'validation_size': 20,
+                   'weight_decay': 0.0005},
+    'model_list': [   {'Model': 22, 'alpha': 0.2, 'connection': 'ff'},
+                      {'Model': 22, 'alpha': 0.3, 'connection': 'ff'},
+                      {'Model': 22, 'alpha': 0.4, 'connection': 'ff'},
+                      {'Model': 22, 'alpha': 0.5, 'connection': 'ff'},
+                      {'Model': 22, 'alpha': 0.6, 'connection': 'ff'},
+                      {'Model': 22, 'alpha': 0.7, 'connection': 'ff'},
+                      {'Model': 22, 'alpha': 0.8, 'connection': 'ff'},
+                      {'Model': 0, 'connection': 'cc'}],
+    'repeating': 10}
+
+name           : f16f_Model22_alpha_0.2
+logdir         : 
+dataset        : cora
+train_size     : 4.0
+learning_rate  : 0.02
+feature        : bow
+logging        : False
+labels of each class :  [13  6 16 36 15 12 10]
+Calculate absorption probability...
