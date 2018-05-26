@@ -1,0 +1,966 @@
+Namespace(dataset='pubmed', loss_func=None, repeating=20, train_size=0.2, validate=None, verbose=False, ws_beta=None)
+{   'default': {   'Model': 0,
+                   'Model11': 'nearest',
+                   'Model19': 'union',
+                   'Model_to_add_label': {'Model': 0},
+                   'Model_to_predict': {'Model': 0},
+                   'absorption_type': 'binary',
+                   'alpha': 1e-06,
+                   'beta': 0.05,
+                   'classifier': 'svm',
+                   'connection': 'cc',
+                   'conv': 'gcn',
+                   'dataset': 'pubmed',
+                   'drop_inter_class_edge': False,
+                   'dropout': 0.5,
+                   'early_stopping': 0,
+                   'epochs': 200,
+                   'feature': 'bow',
+                   'gamma': 1e-05,
+                   'k': -1,
+                   'lambda': 0,
+                   'layer_size': [16],
+                   'learning_rate': 0.01,
+                   'logdir': '',
+                   'logging': False,
+                   'loss_func': 'default',
+                   'max_degree': 2,
+                   'max_triplet': 1000,
+                   'mu': 1,
+                   'name': '',
+                   'poly_parameters': [1, -2, 1],
+                   'random_seed': 1527292111,
+                   'relu_enable': True,
+                   'smoothing': None,
+                   'svm_degree': 4,
+                   'svm_kernel': 'rbf',
+                   't': 500,
+                   't2': 100,
+                   'taubin_f': 0.7,
+                   'taubin_lambda': 0.3,
+                   'taubin_mu': -0.31,
+                   'taubin_repeat': 5,
+                   'taubin_t': 0.2,
+                   'threads': 32,
+                   'train': True,
+                   'train_size': 0.2,
+                   'tree_depth': None,
+                   'validate': False,
+                   'validation_size': 20,
+                   'weight_decay': 0.0005,
+                   'ws_beta': 20},
+    'model_list': [   {'Model': 0, 'connection': 'cf'},
+                      {'Model': 0, 'connection': 'cc'},
+                      {   'Model': 0,
+                          'connection': 'ccc',
+                          'layer_size': [16, 16]}],
+    'repeating': 20}
+
+name           : c16f_Model0
+logdir         : 
+dataset        : pubmed
+train_size     : 0.2
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 9 15 15]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 0.89420 accuracy= 0.71400 time= 0.19864
+accuracy of each class= [0.76288664, 0.57971025, 0.83163261]
+Total time=131.12342381477356s
+
+name           : c16c_Model0
+logdir         : 
+dataset        : pubmed
+train_size     : 0.2
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 9 15 15]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 0.79589 accuracy= 0.75600 time= 0.21846
+accuracy of each class= [0.67010313, 0.76328498, 0.79081631]
+Total time=144.42821836471558s
+
+name           : c16c16c_Model0
+logdir         : 
+dataset        : pubmed
+train_size     : 0.2
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 9 15 15]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 0.87995 accuracy= 0.74800 time= 0.17779
+accuracy of each class= [0.65979385, 0.75362307, 0.78571427]
+Total time=175.03806114196777s
+
+name           : c16f_Model0
+logdir         : 
+dataset        : pubmed
+train_size     : 0.2
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 7 16 16]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 0.95560 accuracy= 0.63600 time= 0.16697
+accuracy of each class= [0.23893803, 0.8477155, 0.65263158]
+Total time=106.76267957687378s
+
+name           : c16c_Model0
+logdir         : 
+dataset        : pubmed
+train_size     : 0.2
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 7 16 16]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 0.85272 accuracy= 0.71000 time= 0.17865
+accuracy of each class= [0.50442481, 0.89340079, 0.64210522]
+Total time=119.04281210899353s
+
+name           : c16c16c_Model0
+logdir         : 
+dataset        : pubmed
+train_size     : 0.2
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 7 16 16]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 0.95463 accuracy= 0.72800 time= 0.18728
+accuracy of each class= [0.61061954, 0.92893386, 0.58947366]
+Total time=155.69019436836243s
+
+name           : c16f_Model0
+logdir         : 
+dataset        : pubmed
+train_size     : 0.2
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [12 12 15]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 0.91513 accuracy= 0.68600 time= 0.15163
+accuracy of each class= [0.96739131, 0.60101008, 0.64285696]
+Total time=93.40784907341003s
+
+name           : c16c_Model0
+logdir         : 
+dataset        : pubmed
+train_size     : 0.2
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [12 12 15]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 0.83198 accuracy= 0.74400 time= 0.18133
+accuracy of each class= [0.94565225, 0.74242437, 0.6571427]
+Total time=103.72280597686768s
+
+name           : c16c16c_Model0
+logdir         : 
+dataset        : pubmed
+train_size     : 0.2
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [12 12 15]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 0.97309 accuracy= 0.70600 time= 0.17027
+accuracy of each class= [0.79347819, 0.78787893, 0.5904761]
+Total time=128.282155752182s
+
+name           : c16f_Model0
+logdir         : 
+dataset        : pubmed
+train_size     : 0.2
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 9 17 13]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 0.85911 accuracy= 0.73400 time= 0.15216
+accuracy of each class= [0.81981987, 0.78306878, 0.63999987]
+Total time=84.63290047645569s
+
+name           : c16c_Model0
+logdir         : 
+dataset        : pubmed
+train_size     : 0.2
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 9 17 13]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 0.79648 accuracy= 0.76000 time= 0.16679
+accuracy of each class= [0.75675672, 0.80952388, 0.71499985]
+Total time=111.48257279396057s
+
+name           : c16c16c_Model0
+logdir         : 
+dataset        : pubmed
+train_size     : 0.2
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 9 17 13]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 0.96974 accuracy= 0.77400 time= 0.15171
+accuracy of each class= [0.77477479, 0.81481481, 0.73499984]
+Total time=129.5648593902588s
+
+name           : c16f_Model0
+logdir         : 
+dataset        : pubmed
+train_size     : 0.2
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 5 19 15]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 0.86488 accuracy= 0.68800 time= 0.13127
+accuracy of each class= [0.46363634, 0.89830518, 0.62910807]
+Total time=85.26468920707703s
+
+name           : c16c_Model0
+logdir         : 
+dataset        : pubmed
+train_size     : 0.2
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 5 19 15]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 0.74365 accuracy= 0.76200 time= 0.14173
+accuracy of each class= [0.590909, 0.93785322, 0.70422542]
+Total time=100.89500403404236s
+
+name           : c16c16c_Model0
+logdir         : 
+dataset        : pubmed
+train_size     : 0.2
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 5 19 15]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 0.92280 accuracy= 0.74400 time= 0.15210
+accuracy of each class= [0.69090897, 0.95480245, 0.59624428]
+Total time=128.31745719909668s
+
+name           : c16f_Model0
+logdir         : 
+dataset        : pubmed
+train_size     : 0.2
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 4 18 17]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 0.96822 accuracy= 0.67600 time= 0.13706
+accuracy of each class= [0.020618558, 0.89743572, 0.7740382]
+Total time=81.00933575630188s
+
+name           : c16c_Model0
+logdir         : 
+dataset        : pubmed
+train_size     : 0.2
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 4 18 17]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 0.83931 accuracy= 0.72400 time= 0.15735
+accuracy of each class= [0.24742268, 0.89743584, 0.78365362]
+Total time=99.00440573692322s
+
+name           : c16c16c_Model0
+logdir         : 
+dataset        : pubmed
+train_size     : 0.2
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 4 18 17]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 0.91934 accuracy= 0.75600 time= 0.17421
+accuracy of each class= [0.43298969, 0.88717937, 0.78365356]
+Total time=128.95083498954773s
+
+name           : c16f_Model0
+logdir         : 
+dataset        : pubmed
+train_size     : 0.2
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 9 19 11]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 0.91853 accuracy= 0.69800 time= 0.13547
+accuracy of each class= [0.68571436, 0.86976779, 0.5]
+Total time=87.5523509979248s
+
+name           : c16c_Model0
+logdir         : 
+dataset        : pubmed
+train_size     : 0.2
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 9 19 11]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 0.81775 accuracy= 0.72600 time= 0.14916
+accuracy of each class= [0.64761919, 0.8651166, 0.60555553]
+Total time=98.75793957710266s
+
+name           : c16c16c_Model0
+logdir         : 
+dataset        : pubmed
+train_size     : 0.2
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 9 19 11]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 0.86264 accuracy= 0.76800 time= 0.14630
+accuracy of each class= [0.69523823, 0.82790726, 0.7388888]
+Total time=124.01041960716248s
+
+name           : c16f_Model0
+logdir         : 
+dataset        : pubmed
+train_size     : 0.2
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 8 18 13]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 0.85252 accuracy= 0.73200 time= 0.16597
+accuracy of each class= [0.64754093, 0.85561484, 0.6649217]
+Total time=90.00560975074768s
+
+name           : c16c_Model0
+logdir         : 
+dataset        : pubmed
+train_size     : 0.2
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 8 18 13]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 0.77047 accuracy= 0.79000 time= 0.17729
+accuracy of each class= [0.83606559, 0.87700522, 0.67539287]
+Total time=101.14147877693176s
+
+name           : c16c16c_Model0
+logdir         : 
+dataset        : pubmed
+train_size     : 0.2
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 8 18 13]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 0.92195 accuracy= 0.77000 time= 0.14705
+accuracy of each class= [0.81147534, 0.85561484, 0.65968609]
+Total time=128.30736374855042s
+
+name           : c16f_Model0
+logdir         : 
+dataset        : pubmed
+train_size     : 0.2
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [10 12 17]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 0.81601 accuracy= 0.74800 time= 0.15197
+accuracy of each class= [0.7966103, 0.76960754, 0.69101149]
+Total time=91.06732606887817s
+
+name           : c16c_Model0
+logdir         : 
+dataset        : pubmed
+train_size     : 0.2
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [10 12 17]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 0.79292 accuracy= 0.77000 time= 0.18166
+accuracy of each class= [0.77966118, 0.84313685, 0.67977554]
+Total time=111.73548603057861s
+
+name           : c16c16c_Model0
+logdir         : 
+dataset        : pubmed
+train_size     : 0.2
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [10 12 17]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.06952 accuracy= 0.73800 time= 0.18760
+accuracy of each class= [0.73728824, 0.80882317, 0.65730357]
+Total time=156.393221616745s
+
+name           : c16f_Model0
+logdir         : 
+dataset        : pubmed
+train_size     : 0.2
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 5 15 19]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 0.78683 accuracy= 0.76000 time= 0.24544
+accuracy of each class= [0.55208337, 0.90243906, 0.71356767]
+Total time=121.26869750022888s
+
+name           : c16c_Model0
+logdir         : 
+dataset        : pubmed
+train_size     : 0.2
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 5 15 19]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 0.72533 accuracy= 0.79800 time= 0.25074
+accuracy of each class= [0.63541669, 0.94146353, 0.728643]
+Total time=146.6379795074463s
+
+name           : c16c16c_Model0
+logdir         : 
+dataset        : pubmed
+train_size     : 0.2
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 5 15 19]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 0.70008 accuracy= 0.78800 time= 0.18115
+accuracy of each class= [0.6875, 0.96097571, 0.65829134]
+Total time=173.1888415813446s
+
+name           : c16f_Model0
+logdir         : 
+dataset        : pubmed
+train_size     : 0.2
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 9 15 15]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 0.86377 accuracy= 0.72000 time= 0.19480
+accuracy of each class= [0.70476204, 0.76279098, 0.67777765]
+Total time=117.53878283500671s
+
+name           : c16c_Model0
+logdir         : 
+dataset        : pubmed
+train_size     : 0.2
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 9 15 15]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 0.70449 accuracy= 0.78800 time= 0.17432
+accuracy of each class= [0.79047626, 0.79534912, 0.77777773]
+Total time=153.58001399040222s
+
+name           : c16c16c_Model0
+logdir         : 
+dataset        : pubmed
+train_size     : 0.2
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 9 15 15]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 0.70362 accuracy= 0.78400 time= 0.17918
+accuracy of each class= [0.73333341, 0.80930263, 0.78333324]
+Total time=180.70768976211548s
+
+name           : c16f_Model0
+logdir         : 
+dataset        : pubmed
+train_size     : 0.2
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 7 15 17]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 0.86791 accuracy= 0.72400 time= 0.19378
+accuracy of each class= [0.47663552, 0.86740297, 0.72641492]
+Total time=114.46988248825073s
+
+name           : c16c_Model0
+logdir         : 
+dataset        : pubmed
+train_size     : 0.2
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 7 15 17]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 0.79794 accuracy= 0.76000 time= 0.18122
+accuracy of each class= [0.62616819, 0.8618781, 0.74056584]
+Total time=138.17645359039307s
+
+name           : c16c16c_Model0
+logdir         : 
+dataset        : pubmed
+train_size     : 0.2
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 7 15 17]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 0.86287 accuracy= 0.77800 time= 0.22925
+accuracy of each class= [0.71962613, 0.8618781, 0.7358489]
+Total time=183.74492478370667s
+
+name           : c16f_Model0
+logdir         : 
+dataset        : pubmed
+train_size     : 0.2
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 7 15 17]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 0.88332 accuracy= 0.68000 time= 0.23793
+accuracy of each class= [0.29268292, 0.93913037, 0.53191495]
+Total time=116.53940534591675s
+
+name           : c16c_Model0
+logdir         : 
+dataset        : pubmed
+train_size     : 0.2
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 7 15 17]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 0.84719 accuracy= 0.70400 time= 0.26553
+accuracy of each class= [0.28048781, 0.90434778, 0.64361715]
+Total time=124.64872121810913s
+
+name           : c16c16c_Model0
+logdir         : 
+dataset        : pubmed
+train_size     : 0.2
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 7 15 17]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.06265 accuracy= 0.69800 time= 0.16703
+accuracy of each class= [0.36585364, 0.86086959, 0.64361715]
+Total time=166.48771929740906s
+
+name           : c16f_Model0
+logdir         : 
+dataset        : pubmed
+train_size     : 0.2
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 7 19 13]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 0.89657 accuracy= 0.67200 time= 0.22247
+accuracy of each class= [0.56250012, 0.86021513, 0.5594058]
+Total time=113.23437094688416s
+
+name           : c16c_Model0
+logdir         : 
+dataset        : pubmed
+train_size     : 0.2
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 7 19 13]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 0.83728 accuracy= 0.73400 time= 0.21767
+accuracy of each class= [0.70535725, 0.78494626, 0.70297015]
+Total time=143.45777940750122s
+
+name           : c16c16c_Model0
+logdir         : 
+dataset        : pubmed
+train_size     : 0.2
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 7 19 13]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 0.98537 accuracy= 0.73600 time= 0.19275
+accuracy of each class= [0.78571439, 0.75806451, 0.6881187]
+Total time=176.9313588142395s
+
+name           : c16f_Model0
+logdir         : 
+dataset        : pubmed
+train_size     : 0.2
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 6 19 14]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 0.89495 accuracy= 0.66800 time= 0.20912
+accuracy of each class= [0.2717391, 0.85567003, 0.66822422]
+Total time=107.11919736862183s
+
+name           : c16c_Model0
+logdir         : 
+dataset        : pubmed
+train_size     : 0.2
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 6 19 14]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 0.80186 accuracy= 0.73400 time= 0.25943
+accuracy of each class= [0.5, 0.86597931, 0.71495318]
+Total time=131.41009044647217s
+
+name           : c16c16c_Model0
+logdir         : 
+dataset        : pubmed
+train_size     : 0.2
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 6 19 14]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 0.89953 accuracy= 0.74600 time= 0.19448
+accuracy of each class= [0.5108695, 0.86597931, 0.73831773]
+Total time=170.68822264671326s
+
+name           : c16f_Model0
+logdir         : 
+dataset        : pubmed
+train_size     : 0.2
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 9 19 11]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 0.91395 accuracy= 0.69800 time= 0.22452
+accuracy of each class= [0.73333353, 0.92820501, 0.45499995]
+Total time=113.86055517196655s
+
+name           : c16c_Model0
+logdir         : 
+dataset        : pubmed
+train_size     : 0.2
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 9 19 11]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 0.80237 accuracy= 0.73400 time= 0.20310
+accuracy of each class= [0.77142876, 0.96410239, 0.48999995]
+Total time=139.81496691703796s
+
+name           : c16c16c_Model0
+logdir         : 
+dataset        : pubmed
+train_size     : 0.2
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 9 19 11]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 0.86334 accuracy= 0.76600 time= 0.21778
+accuracy of each class= [0.75238115, 0.93846136, 0.6049999]
+Total time=172.80525851249695s
+
+name           : c16f_Model0
+logdir         : 
+dataset        : pubmed
+train_size     : 0.2
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [12 12 15]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 0.75930 accuracy= 0.76600 time= 0.16410
+accuracy of each class= [0.86792469, 0.71568596, 0.76315784]
+Total time=121.26359295845032s
+
+name           : c16c_Model0
+logdir         : 
+dataset        : pubmed
+train_size     : 0.2
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [12 12 15]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 0.69986 accuracy= 0.80600 time= 0.17854
+accuracy of each class= [0.92452836, 0.7450977, 0.8052631]
+Total time=142.05838346481323s
+
+name           : c16c16c_Model0
+logdir         : 
+dataset        : pubmed
+train_size     : 0.2
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [12 12 15]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 0.78645 accuracy= 0.77800 time= 0.28804
+accuracy of each class= [0.89622653, 0.69117624, 0.8052631]
+Total time=176.13297533988953s
+
+name           : c16f_Model0
+logdir         : 
+dataset        : pubmed
+train_size     : 0.2
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 6 15 18]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 0.85259 accuracy= 0.70400 time= 0.19606
+accuracy of each class= [0.55045873, 0.7433154, 0.7499997]
+Total time=119.86735200881958s
+
+name           : c16c_Model0
+logdir         : 
+dataset        : pubmed
+train_size     : 0.2
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 6 15 18]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 0.79172 accuracy= 0.76400 time= 0.20509
+accuracy of each class= [0.59633029, 0.78609616, 0.8333329]
+Total time=141.52986359596252s
+
+name           : c16c16c_Model0
+logdir         : 
+dataset        : pubmed
+train_size     : 0.2
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 6 15 18]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 0.88365 accuracy= 0.77400 time= 0.17984
+accuracy of each class= [0.64220178, 0.80213892, 0.81862706]
+Total time=179.4938201904297s
+
+name           : c16f_Model0
+logdir         : 
+dataset        : pubmed
+train_size     : 0.2
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 6 13 20]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 0.85071 accuracy= 0.71000 time= 0.20507
+accuracy of each class= [0.39130434, 0.67980307, 0.88292682]
+Total time=115.35079073905945s
+
+name           : c16c_Model0
+logdir         : 
+dataset        : pubmed
+train_size     : 0.2
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 6 13 20]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 0.75711 accuracy= 0.81000 time= 0.23873
+accuracy of each class= [0.68478256, 0.84236479, 0.83414632]
+Total time=135.43857336044312s
+
+name           : c16c16c_Model0
+logdir         : 
+dataset        : pubmed
+train_size     : 0.2
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 6 13 20]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 0.81387 accuracy= 0.78400 time= 0.21978
+accuracy of each class= [0.71739119, 0.87192148, 0.72682917]
+Total time=166.55245327949524s
+
+name           : c16f_Model0
+logdir         : 
+dataset        : pubmed
+train_size     : 0.2
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 6 19 14]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 0.88332 accuracy= 0.70800 time= 0.15336
+accuracy of each class= [0.49019614, 0.93103456, 0.58974349]
+Total time=109.65017247200012s
+
+name           : c16c_Model0
+logdir         : 
+dataset        : pubmed
+train_size     : 0.2
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 6 19 14]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 0.83463 accuracy= 0.74400 time= 0.23149
+accuracy of each class= [0.58823532, 0.92118239, 0.64102548]
+Total time=128.1886019706726s
+
+name           : c16c16c_Model0
+logdir         : 
+dataset        : pubmed
+train_size     : 0.2
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 6 19 14]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.27693 accuracy= 0.72600 time= 0.21010
+accuracy of each class= [0.6470589, 0.91625625, 0.56923068]
+Total time=174.187429189682s
+
+REPEAT	20
+DATASET 	train_size	valid_size	RESULTS 	STD     	TIME    	NAME    
+pubmed  	0.2%    	20%     	0.706100	0.031840	106.05  	c16f_Model0
+pubmed  	0.2%    	20%     	0.755901	0.030143	125.76  	c16c_Model0
+pubmed  	0.2%    	20%     	0.754501	0.025674	158.77  	c16c16c_Model0
+[ 6 19 14] [0.565, 0.814, 0.667, ]	c16f_Model0
+[ 6 19 14] [0.654, 0.852, 0.708, ]	c16c_Model0
+[ 6 19 14] [0.683, 0.848, 0.695, ]	c16c16c_Model0

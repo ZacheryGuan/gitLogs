@@ -1,0 +1,966 @@
+Namespace(dataset='citeseer', loss_func=None, repeating=20, train_size=5.0, validate=None, verbose=False, ws_beta=None)
+{   'default': {   'Model': 0,
+                   'Model11': 'nearest',
+                   'Model19': 'union',
+                   'Model_to_add_label': {'Model': 0},
+                   'Model_to_predict': {'Model': 0},
+                   'absorption_type': 'binary',
+                   'alpha': 1e-06,
+                   'beta': 0.05,
+                   'classifier': 'svm',
+                   'connection': 'cc',
+                   'conv': 'gcn',
+                   'dataset': 'citeseer',
+                   'drop_inter_class_edge': False,
+                   'dropout': 0.5,
+                   'early_stopping': 0,
+                   'epochs': 200,
+                   'feature': 'bow',
+                   'gamma': 1e-05,
+                   'k': -1,
+                   'lambda': 0,
+                   'layer_size': [16],
+                   'learning_rate': 0.01,
+                   'logdir': '',
+                   'logging': False,
+                   'loss_func': 'default',
+                   'max_degree': 2,
+                   'max_triplet': 1000,
+                   'mu': 1,
+                   'name': '',
+                   'poly_parameters': [1, -2, 1],
+                   'random_seed': 1527291872,
+                   'relu_enable': True,
+                   'smoothing': None,
+                   'svm_degree': 4,
+                   'svm_kernel': 'rbf',
+                   't': 500,
+                   't2': 100,
+                   'taubin_f': 0.7,
+                   'taubin_lambda': 0.3,
+                   'taubin_mu': -0.31,
+                   'taubin_repeat': 5,
+                   'taubin_t': 0.2,
+                   'threads': 32,
+                   'train': True,
+                   'train_size': 5.0,
+                   'tree_depth': None,
+                   'validate': False,
+                   'validation_size': 20,
+                   'weight_decay': 0.0005,
+                   'ws_beta': 20},
+    'model_list': [   {'Model': 0, 'connection': 'cf'},
+                      {'Model': 0, 'connection': 'cc'},
+                      {   'Model': 0,
+                          'connection': 'ccc',
+                          'layer_size': [16, 16]}],
+    'repeating': 20}
+
+name           : c16f_Model0
+logdir         : 
+dataset        : citeseer
+train_size     : 5.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 12.  26.  35.  29.  30.  32.]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.43234 accuracy= 0.70000 time= 0.02526
+accuracy of each class= [0.12121212, 0.7108435, 0.6470589, 0.75000006, 0.81481481, 0.81609219]
+Total time=16.354849100112915s
+
+name           : c16c_Model0
+logdir         : 
+dataset        : citeseer
+train_size     : 5.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 12.  26.  35.  29.  30.  32.]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.35681 accuracy= 0.72200 time= 0.03083
+accuracy of each class= [0.090909086, 0.75903618, 0.70588237, 0.75000006, 0.83950621, 0.81609207]
+Total time=17.06181001663208s
+
+name           : c16c16c_Model0
+logdir         : 
+dataset        : citeseer
+train_size     : 5.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 12.  26.  35.  29.  30.  32.]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.27742 accuracy= 0.68600 time= 0.02769
+accuracy of each class= [0.2121212, 0.72289163, 0.6470589, 0.72321439, 0.79012346, 0.74712652]
+Total time=19.15740942955017s
+
+name           : c16f_Model0
+logdir         : 
+dataset        : citeseer
+train_size     : 5.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 13.  31.  36.  35.  26.  24.]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.37098 accuracy= 0.69000 time= 0.02251
+accuracy of each class= [0.0, 0.73863643, 0.66400003, 0.78571439, 0.83544284, 0.64179105]
+Total time=16.89639139175415s
+
+name           : c16c_Model0
+logdir         : 
+dataset        : citeseer
+train_size     : 5.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 13.  31.  36.  35.  26.  24.]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.32411 accuracy= 0.70600 time= 0.02631
+accuracy of each class= [0.0, 0.72727275, 0.7440002, 0.75000006, 0.89873397, 0.61194026]
+Total time=18.163305044174194s
+
+name           : c16c16c_Model0
+logdir         : 
+dataset        : citeseer
+train_size     : 5.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 13.  31.  36.  35.  26.  24.]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.24611 accuracy= 0.66400 time= 0.02460
+accuracy of each class= [0.18518518, 0.60227275, 0.75200015, 0.66964287, 0.78480989, 0.64179105]
+Total time=19.733063220977783s
+
+name           : c16f_Model0
+logdir         : 
+dataset        : citeseer
+train_size     : 5.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 10.  28.  34.  33.  30.  31.]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.43002 accuracy= 0.71000 time= 0.03043
+accuracy of each class= [0.0, 0.71604931, 0.70212758, 0.79166669, 0.87912065, 0.79999995]
+Total time=16.515538930892944s
+
+name           : c16c_Model0
+logdir         : 
+dataset        : citeseer
+train_size     : 5.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 10.  28.  34.  33.  30.  31.]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.34293 accuracy= 0.71400 time= 0.02790
+accuracy of each class= [0.0, 0.7037037, 0.73404258, 0.7833333, 0.89010972, 0.79999995]
+Total time=17.231566190719604s
+
+name           : c16c16c_Model0
+logdir         : 
+dataset        : citeseer
+train_size     : 5.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 10.  28.  34.  33.  30.  31.]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.36736 accuracy= 0.68200 time= 0.03035
+accuracy of each class= [0.14634146, 0.64197528, 0.71276593, 0.75833338, 0.74725258, 0.8142857]
+Total time=18.90259075164795s
+
+name           : c16f_Model0
+logdir         : 
+dataset        : citeseer
+train_size     : 5.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [  8.  31.  40.  38.  25.  24.]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.38724 accuracy= 0.69600 time= 0.02337
+accuracy of each class= [0.0, 0.76595742, 0.79569894, 0.76086956, 0.80434787, 0.60416669]
+Total time=17.015928745269775s
+
+name           : c16c_Model0
+logdir         : 
+dataset        : citeseer
+train_size     : 5.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [  8.  31.  40.  38.  25.  24.]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.33400 accuracy= 0.70400 time= 0.02169
+accuracy of each class= [0.030303029, 0.74468076, 0.74193549, 0.78260875, 0.84782606, 0.64583331]
+Total time=17.58213210105896s
+
+name           : c16c16c_Model0
+logdir         : 
+dataset        : citeseer
+train_size     : 5.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [  8.  31.  40.  38.  25.  24.]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.28624 accuracy= 0.67400 time= 0.02660
+accuracy of each class= [0.060606059, 0.76595742, 0.68817204, 0.71739131, 0.81521749, 0.60416669]
+Total time=18.944480180740356s
+
+name           : c16f_Model0
+logdir         : 
+dataset        : citeseer
+train_size     : 5.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 11.  31.  31.  43.  28.  20.]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.45333 accuracy= 0.67200 time= 0.03007
+accuracy of each class= [0.027027026, 0.70786518, 0.69072175, 0.82828283, 0.90625, 0.46153843]
+Total time=16.399906158447266s
+
+name           : c16c_Model0
+logdir         : 
+dataset        : citeseer
+train_size     : 5.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 11.  31.  31.  43.  28.  20.]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.38384 accuracy= 0.71000 time= 0.03597
+accuracy of each class= [0.081081077, 0.77528089, 0.74226809, 0.80808079, 0.91666669, 0.55128199]
+Total time=18.133460760116577s
+
+name           : c16c16c_Model0
+logdir         : 
+dataset        : citeseer
+train_size     : 5.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 11.  31.  31.  43.  28.  20.]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.33208 accuracy= 0.67200 time= 0.02848
+accuracy of each class= [0.1081081, 0.65168536, 0.70103097, 0.74747473, 0.84375, 0.65384609]
+Total time=22.1238214969635s
+
+name           : c16f_Model0
+logdir         : 
+dataset        : citeseer
+train_size     : 5.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 11.  23.  30.  39.  30.  32.]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.40632 accuracy= 0.66000 time= 0.03782
+accuracy of each class= [0.07692308, 0.4042553, 0.67346936, 0.86597937, 0.826087, 0.80769235]
+Total time=18.935991287231445s
+
+name           : c16c_Model0
+logdir         : 
+dataset        : citeseer
+train_size     : 5.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 11.  23.  30.  39.  30.  32.]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.34026 accuracy= 0.71400 time= 0.03052
+accuracy of each class= [0.07692308, 0.53191489, 0.77551019, 0.88659787, 0.88043481, 0.78205132]
+Total time=19.131502389907837s
+
+name           : c16c16c_Model0
+logdir         : 
+dataset        : citeseer
+train_size     : 5.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 11.  23.  30.  39.  30.  32.]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.22665 accuracy= 0.70000 time= 0.02595
+accuracy of each class= [0.12820512, 0.52127653, 0.76530606, 0.87628859, 0.85869563, 0.73076934]
+Total time=21.38047218322754s
+
+name           : c16f_Model0
+logdir         : 
+dataset        : citeseer
+train_size     : 5.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 12.  31.  28.  34.  32.  28.]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.35585 accuracy= 0.70400 time= 0.02688
+accuracy of each class= [0.028571429, 0.71590912, 0.60000002, 0.83636385, 0.91011238, 0.74242413]
+Total time=18.59767770767212s
+
+name           : c16c_Model0
+logdir         : 
+dataset        : citeseer
+train_size     : 5.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 12.  31.  28.  34.  32.  28.]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.29121 accuracy= 0.73200 time= 0.02390
+accuracy of each class= [0.028571429, 0.76136369, 0.65454549, 0.84545481, 0.91011238, 0.78787869]
+Total time=19.22305464744568s
+
+name           : c16c16c_Model0
+logdir         : 
+dataset        : citeseer
+train_size     : 5.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 12.  31.  28.  34.  32.  28.]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.22527 accuracy= 0.69600 time= 0.03181
+accuracy of each class= [0.2857143, 0.67045462, 0.60000008, 0.77272743, 0.87640452, 0.75757563]
+Total time=21.680660486221313s
+
+name           : c16f_Model0
+logdir         : 
+dataset        : citeseer
+train_size     : 5.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 11.  29.  36.  34.  25.  29.]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.42287 accuracy= 0.68000 time= 0.02979
+accuracy of each class= [0.0, 0.63380277, 0.8446601, 0.72641492, 0.88659787, 0.56410253]
+Total time=18.577882528305054s
+
+name           : c16c_Model0
+logdir         : 
+dataset        : citeseer
+train_size     : 5.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 11.  29.  36.  34.  25.  29.]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.36821 accuracy= 0.70000 time= 0.02564
+accuracy of each class= [0.047619049, 0.64788729, 0.82524258, 0.72641492, 0.89690721, 0.66666669]
+Total time=19.998892307281494s
+
+name           : c16c16c_Model0
+logdir         : 
+dataset        : citeseer
+train_size     : 5.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 11.  29.  36.  34.  25.  29.]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.29463 accuracy= 0.69400 time= 0.02554
+accuracy of each class= [0.11904761, 0.64788729, 0.83495134, 0.69811302, 0.8041237, 0.73076916]
+Total time=21.592520475387573s
+
+name           : c16f_Model0
+logdir         : 
+dataset        : citeseer
+train_size     : 5.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 10.  31.  34.  48.  23.  20.]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.44312 accuracy= 0.66600 time= 0.03172
+accuracy of each class= [0.0, 0.55319148, 0.79611635, 0.78761071, 0.83132547, 0.57746476]
+Total time=18.96111488342285s
+
+name           : c16c_Model0
+logdir         : 
+dataset        : citeseer
+train_size     : 5.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 10.  31.  34.  48.  23.  20.]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.35381 accuracy= 0.71200 time= 0.03086
+accuracy of each class= [0.088235296, 0.65957451, 0.81553388, 0.79646033, 0.85542178, 0.64788735]
+Total time=19.450820684432983s
+
+name           : c16c16c_Model0
+logdir         : 
+dataset        : citeseer
+train_size     : 5.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 10.  31.  34.  48.  23.  20.]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.35764 accuracy= 0.67200 time= 0.03123
+accuracy of each class= [0.2647059, 0.54255319, 0.80582511, 0.77876121, 0.74698806, 0.6056338]
+Total time=21.7793185710907s
+
+name           : c16f_Model0
+logdir         : 
+dataset        : citeseer
+train_size     : 5.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 11.  30.  30.  42.  34.  19.]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.36322 accuracy= 0.70800 time= 0.04049
+accuracy of each class= [0.0, 0.73118281, 0.71153837, 0.8245613, 0.89285696, 0.57333326]
+Total time=18.80261540412903s
+
+name           : c16c_Model0
+logdir         : 
+dataset        : citeseer
+train_size     : 5.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 11.  30.  30.  42.  34.  19.]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.31274 accuracy= 0.72000 time= 0.02998
+accuracy of each class= [0.0, 0.72043008, 0.73076916, 0.80701745, 0.8809523, 0.67999995]
+Total time=19.41052269935608s
+
+name           : c16c16c_Model0
+logdir         : 
+dataset        : citeseer
+train_size     : 5.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 11.  30.  30.  42.  34.  19.]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.34018 accuracy= 0.67800 time= 0.03194
+accuracy of each class= [0.0, 0.69892472, 0.69230765, 0.72807008, 0.84523803, 0.63999993]
+Total time=22.182833909988403s
+
+name           : c16f_Model0
+logdir         : 
+dataset        : citeseer
+train_size     : 5.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [  9.  34.  32.  37.  32.  21.]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.35755 accuracy= 0.70200 time= 0.02840
+accuracy of each class= [0.0, 0.78888905, 0.76767677, 0.80869538, 0.84883708, 0.55882359]
+Total time=18.95428442955017s
+
+name           : c16c_Model0
+logdir         : 
+dataset        : citeseer
+train_size     : 5.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [  9.  34.  32.  37.  32.  21.]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.30061 accuracy= 0.71200 time= 0.02685
+accuracy of each class= [0.0, 0.81111115, 0.80808079, 0.73043454, 0.88372082, 0.63235301]
+Total time=19.488604068756104s
+
+name           : c16c16c_Model0
+logdir         : 
+dataset        : citeseer
+train_size     : 5.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [  9.  34.  32.  37.  32.  21.]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.30077 accuracy= 0.70200 time= 0.03141
+accuracy of each class= [0.052631579, 0.65555567, 0.81818181, 0.78260845, 0.86046499, 0.6617648]
+Total time=21.719568252563477s
+
+name           : c16f_Model0
+logdir         : 
+dataset        : citeseer
+train_size     : 5.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 12.  28.  38.  31.  31.  24.]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.49092 accuracy= 0.67400 time= 0.02548
+accuracy of each class= [0.0, 0.5544554, 0.81609219, 0.76923066, 0.84705883, 0.69879526]
+Total time=17.43416714668274s
+
+name           : c16c_Model0
+logdir         : 
+dataset        : citeseer
+train_size     : 5.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 12.  28.  38.  31.  31.  24.]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.43513 accuracy= 0.69200 time= 0.02563
+accuracy of each class= [0.0, 0.61386132, 0.78160936, 0.77884603, 0.84705883, 0.75903618]
+Total time=17.137503385543823s
+
+name           : c16c16c_Model0
+logdir         : 
+dataset        : citeseer
+train_size     : 5.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 12.  28.  38.  31.  31.  24.]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.37805 accuracy= 0.64800 time= 0.02852
+accuracy of each class= [0.1025641, 0.60396034, 0.77011508, 0.73076916, 0.71764708, 0.66265064]
+Total time=19.16824460029602s
+
+name           : c16f_Model0
+logdir         : 
+dataset        : citeseer
+train_size     : 5.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 11.  31.  38.  28.  29.  27.]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.45761 accuracy= 0.67400 time= 0.02823
+accuracy of each class= [0.023809524, 0.78723395, 0.74999988, 0.64583331, 0.8241756, 0.66197181]
+Total time=16.19370412826538s
+
+name           : c16c_Model0
+logdir         : 
+dataset        : citeseer
+train_size     : 5.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 11.  31.  38.  28.  29.  27.]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.36900 accuracy= 0.69600 time= 0.02667
+accuracy of each class= [0.023809524, 0.77659571, 0.80769217, 0.66666669, 0.85714269, 0.67605627]
+Total time=16.60864019393921s
+
+name           : c16c16c_Model0
+logdir         : 
+dataset        : citeseer
+train_size     : 5.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 11.  31.  38.  28.  29.  27.]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.33460 accuracy= 0.65600 time= 0.02661
+accuracy of each class= [0.047619049, 0.8085106, 0.65384614, 0.61458331, 0.81318665, 0.69014078]
+Total time=18.245571851730347s
+
+name           : c16f_Model0
+logdir         : 
+dataset        : citeseer
+train_size     : 5.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 15.  20.  41.  31.  34.  25.]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.51295 accuracy= 0.63600 time= 0.01926
+accuracy of each class= [0.11363636, 0.22093025, 0.85714304, 0.67289704, 0.8767122, 0.79487181]
+Total time=15.147117137908936s
+
+name           : c16c_Model0
+logdir         : 
+dataset        : citeseer
+train_size     : 5.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 15.  20.  41.  31.  34.  25.]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.43914 accuracy= 0.67800 time= 0.02487
+accuracy of each class= [0.13636364, 0.43023255, 0.87500012, 0.71028024, 0.83561641, 0.78205132]
+Total time=16.13969349861145s
+
+name           : c16c16c_Model0
+logdir         : 
+dataset        : citeseer
+train_size     : 5.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 15.  20.  41.  31.  34.  25.]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.47484 accuracy= 0.65000 time= 0.03143
+accuracy of each class= [0.11363636, 0.48837206, 0.81250012, 0.71028024, 0.76712322, 0.70512819]
+Total time=18.432940244674683s
+
+name           : c16f_Model0
+logdir         : 
+dataset        : citeseer
+train_size     : 5.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 14.  27.  33.  32.  27.  33.]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.41834 accuracy= 0.71200 time= 0.02571
+accuracy of each class= [0.048780486, 0.70731717, 0.75, 0.75700909, 0.92857134, 0.69620246]
+Total time=15.293356657028198s
+
+name           : c16c_Model0
+logdir         : 
+dataset        : citeseer
+train_size     : 5.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 14.  27.  33.  32.  27.  33.]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.35974 accuracy= 0.72400 time= 0.02600
+accuracy of each class= [0.048780486, 0.695122, 0.7391305, 0.78504652, 0.93877542, 0.74683535]
+Total time=16.475403785705566s
+
+name           : c16c16c_Model0
+logdir         : 
+dataset        : citeseer
+train_size     : 5.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 14.  27.  33.  32.  27.  33.]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.38152 accuracy= 0.65000 time= 0.02353
+accuracy of each class= [0.12195121, 0.70731717, 0.60869575, 0.64485973, 0.82653058, 0.70886064]
+Total time=18.035784244537354s
+
+name           : c16f_Model0
+logdir         : 
+dataset        : citeseer
+train_size     : 5.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 20.  30.  26.  34.  37.  19.]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.51043 accuracy= 0.65000 time= 0.02572
+accuracy of each class= [0.097560972, 0.71276587, 0.59821433, 0.8260867, 0.85714275, 0.42622954]
+Total time=15.280303478240967s
+
+name           : c16c_Model0
+logdir         : 
+dataset        : citeseer
+train_size     : 5.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 20.  30.  26.  34.  37.  19.]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.38656 accuracy= 0.69000 time= 0.01936
+accuracy of each class= [0.097560972, 0.70212758, 0.65178573, 0.84347796, 0.89610374, 0.59016395]
+Total time=16.25661849975586s
+
+name           : c16c16c_Model0
+logdir         : 
+dataset        : citeseer
+train_size     : 5.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 20.  30.  26.  34.  37.  19.]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.32115 accuracy= 0.68000 time= 0.03893
+accuracy of each class= [0.14634146, 0.67021275, 0.61607146, 0.8260867, 0.87012976, 0.6557377]
+Total time=17.15730929374695s
+
+name           : c16f_Model0
+logdir         : 
+dataset        : citeseer
+train_size     : 5.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [  8.  31.  32.  33.  30.  32.]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.41933 accuracy= 0.72800 time= 0.02328
+accuracy of each class= [0.0, 0.76470596, 0.84848487, 0.74545467, 0.85148513, 0.75806457]
+Total time=15.22919774055481s
+
+name           : c16c_Model0
+logdir         : 
+dataset        : citeseer
+train_size     : 5.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [  8.  31.  32.  33.  30.  32.]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.36091 accuracy= 0.73000 time= 0.02332
+accuracy of each class= [0.0, 0.7647059, 0.84848487, 0.73636377, 0.87128717, 0.75806457]
+Total time=15.888934135437012s
+
+name           : c16c16c_Model0
+logdir         : 
+dataset        : citeseer
+train_size     : 5.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [  8.  31.  32.  33.  30.  32.]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.29145 accuracy= 0.69000 time= 0.03298
+accuracy of each class= [0.12195121, 0.62352943, 0.80808079, 0.70909101, 0.80198014, 0.77419364]
+Total time=18.356776237487793s
+
+name           : c16f_Model0
+logdir         : 
+dataset        : citeseer
+train_size     : 5.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 12.  32.  34.  29.  37.  21.]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.49162 accuracy= 0.62400 time= 0.02751
+accuracy of each class= [0.0, 0.7525773, 0.66336632, 0.66999996, 0.90804625, 0.33766237]
+Total time=15.334800243377686s
+
+name           : c16c_Model0
+logdir         : 
+dataset        : citeseer
+train_size     : 5.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 12.  32.  34.  29.  37.  21.]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.42441 accuracy= 0.64800 time= 0.01980
+accuracy of each class= [0.0, 0.69072169, 0.66336626, 0.74000001, 0.89655191, 0.49350652]
+Total time=15.9175865650177s
+
+name           : c16c16c_Model0
+logdir         : 
+dataset        : citeseer
+train_size     : 5.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 12.  32.  34.  29.  37.  21.]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.41734 accuracy= 0.66600 time= 0.03642
+accuracy of each class= [0.2857143, 0.68041235, 0.66336626, 0.70999998, 0.82758635, 0.61038959]
+Total time=17.576725721359253s
+
+name           : c16f_Model0
+logdir         : 
+dataset        : citeseer
+train_size     : 5.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 13.  32.  35.  30.  30.  26.]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.47489 accuracy= 0.65600 time= 0.02162
+accuracy of each class= [0.046511628, 0.70329654, 0.7448979, 0.60000002, 0.91549283, 0.69879526]
+Total time=14.78783130645752s
+
+name           : c16c_Model0
+logdir         : 
+dataset        : citeseer
+train_size     : 5.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 13.  32.  35.  30.  30.  26.]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.39733 accuracy= 0.69000 time= 0.02187
+accuracy of each class= [0.093023255, 0.73626357, 0.75510198, 0.66363645, 0.88732386, 0.77108443]
+Total time=15.919792652130127s
+
+name           : c16c16c_Model0
+logdir         : 
+dataset        : citeseer
+train_size     : 5.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 13.  32.  35.  30.  30.  26.]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.42248 accuracy= 0.66000 time= 0.02727
+accuracy of each class= [0.093023255, 0.70329654, 0.64285713, 0.72727281, 0.85915488, 0.69879526]
+Total time=17.374980688095093s
+
+name           : c16f_Model0
+logdir         : 
+dataset        : citeseer
+train_size     : 5.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 12.  29.  36.  33.  26.  30.]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.51403 accuracy= 0.65800 time= 0.02132
+accuracy of each class= [0.023809524, 0.61764699, 0.82692295, 0.69607848, 0.79012346, 0.65671641]
+Total time=15.540355920791626s
+
+name           : c16c_Model0
+logdir         : 
+dataset        : citeseer
+train_size     : 5.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 12.  29.  36.  33.  26.  30.]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.48478 accuracy= 0.68200 time= 0.01945
+accuracy of each class= [0.047619049, 0.63725489, 0.79807687, 0.73529416, 0.83950621, 0.71641791]
+Total time=15.605090856552124s
+
+name           : c16c16c_Model0
+logdir         : 
+dataset        : citeseer
+train_size     : 5.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 12.  29.  36.  33.  26.  30.]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.65023 accuracy= 0.60800 time= 0.02197
+accuracy of each class= [0.071428567, 0.48039213, 0.69230765, 0.68627453, 0.72839499, 0.76119405]
+Total time=17.188709497451782s
+
+REPEAT	20
+DATASET 	train_size	valid_size	RESULTS 	STD     	TIME    	NAME    
+citeseer	5.0%    	20%     	0.680000	0.027011	16.81   	c16f_Model0
+citeseer	5.0%    	20%     	0.703800	0.019646	17.54   	c16c_Model0
+citeseer	5.0%    	20%     	0.671400	0.021910	19.54   	c16c16c_Model0
+[ 12.  29.  36.  33.  26.  30.] [0.0304, 0.664, 0.737, 0.757, 0.862, 0.644, ]	c16f_Model0
+[ 12.  29.  36.  33.  26.  30.] [0.0445, 0.694, 0.760, 0.766, 0.878, 0.696, ]	c16c_Model0
+[ 12.  29.  36.  33.  26.  30.] [0.133, 0.644, 0.714, 0.731, 0.809, 0.693, ]	c16c16c_Model0

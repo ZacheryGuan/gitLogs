@@ -1,0 +1,966 @@
+Namespace(dataset='cora', loss_func=None, repeating=20, train_size=1.0, validate=None, verbose=False, ws_beta=None)
+{   'default': {   'Model': 0,
+                   'Model11': 'nearest',
+                   'Model19': 'union',
+                   'Model_to_add_label': {'Model': 0},
+                   'Model_to_predict': {'Model': 0},
+                   'absorption_type': 'binary',
+                   'alpha': 1e-06,
+                   'beta': 0.05,
+                   'classifier': 'svm',
+                   'connection': 'cc',
+                   'conv': 'gcn',
+                   'dataset': 'cora',
+                   'drop_inter_class_edge': False,
+                   'dropout': 0.5,
+                   'early_stopping': 0,
+                   'epochs': 200,
+                   'feature': 'bow',
+                   'gamma': 1e-05,
+                   'k': -1,
+                   'lambda': 0,
+                   'layer_size': [16],
+                   'learning_rate': 0.01,
+                   'logdir': '',
+                   'logging': False,
+                   'loss_func': 'default',
+                   'max_degree': 2,
+                   'max_triplet': 1000,
+                   'mu': 1,
+                   'name': '',
+                   'poly_parameters': [1, -2, 1],
+                   'random_seed': 1527291790,
+                   'relu_enable': True,
+                   'smoothing': None,
+                   'svm_degree': 4,
+                   'svm_kernel': 'rbf',
+                   't': 500,
+                   't2': 100,
+                   'taubin_f': 0.7,
+                   'taubin_lambda': 0.3,
+                   'taubin_mu': -0.31,
+                   'taubin_repeat': 5,
+                   'taubin_t': 0.2,
+                   'threads': 32,
+                   'train': True,
+                   'train_size': 1.0,
+                   'tree_depth': None,
+                   'validate': False,
+                   'validation_size': 20,
+                   'weight_decay': 0.0005,
+                   'ws_beta': 20},
+    'model_list': [   {'Model': 0, 'connection': 'cf'},
+                      {'Model': 0, 'connection': 'cc'},
+                      {   'Model': 0,
+                          'connection': 'ccc',
+                          'layer_size': [16, 16]}],
+    'repeating': 20}
+
+name           : c16f_Model0
+logdir         : 
+dataset        : cora
+train_size     : 1.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [2 4 6 9 3 2 1]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.77599 accuracy= 0.47000 time= 0.01054
+accuracy of each class= [0.0, 0.72972971, 0.83157867, 0.83108121, 0.040540539, 0.05084746, 0.0]
+Total time=7.023887872695923s
+
+name           : c16c_Model0
+logdir         : 
+dataset        : cora
+train_size     : 1.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [2 4 6 9 3 2 1]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.59413 accuracy= 0.53800 time= 0.01070
+accuracy of each class= [0.049180329, 0.83783782, 0.87368393, 0.90540558, 0.081081077, 0.20338984, 0.0]
+Total time=8.224619388580322s
+
+name           : c16c16c_Model0
+logdir         : 
+dataset        : cora
+train_size     : 1.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [2 4 6 9 3 2 1]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.82939 accuracy= 0.59800 time= 0.01215
+accuracy of each class= [0.62295079, 0.75675678, 0.85263139, 0.86486501, 0.13513513, 0.23728812, 0.0]
+Total time=10.86427903175354s
+
+name           : c16f_Model0
+logdir         : 
+dataset        : cora
+train_size     : 1.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [4 4 6 1 7 3 2]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 2.14372 accuracy= 0.42000 time= 0.01350
+accuracy of each class= [0.63934422, 0.65789479, 0.78260863, 0.0, 0.81333321, 0.53448278, 0.0]
+Total time=7.799079418182373s
+
+name           : c16c_Model0
+logdir         : 
+dataset        : cora
+train_size     : 1.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [4 4 6 1 7 3 2]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 2.00995 accuracy= 0.51000 time= 0.01231
+accuracy of each class= [0.73770481, 0.8684212, 0.86956525, 0.0, 0.90666664, 0.56896555, 0.66666663]
+Total time=10.261645793914795s
+
+name           : c16c16c_Model0
+logdir         : 
+dataset        : cora
+train_size     : 1.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [4 4 6 1 7 3 2]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 2.44823 accuracy= 0.49000 time= 0.01567
+accuracy of each class= [0.50819671, 0.89473689, 0.71014488, 0.034285713, 0.9333334, 0.63793111, 0.74999994]
+Total time=12.343364238739014s
+
+name           : c16f_Model0
+logdir         : 
+dataset        : cora
+train_size     : 1.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [3 3 1 9 5 3 3]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.76736 accuracy= 0.45800 time= 0.01127
+accuracy of each class= [0.035714287, 0.3191489, 0.012820513, 0.82781452, 0.59722227, 0.43548384, 0.47058821]
+Total time=8.41778039932251s
+
+name           : c16c_Model0
+logdir         : 
+dataset        : cora
+train_size     : 1.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [3 3 1 9 5 3 3]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.62872 accuracy= 0.54200 time= 0.01075
+accuracy of each class= [0.14285715, 0.7659573, 0.064102568, 0.86754972, 0.58333337, 0.53225809, 0.47058821]
+Total time=10.671148777008057s
+
+name           : c16c16c_Model0
+logdir         : 
+dataset        : cora
+train_size     : 1.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [3 3 1 9 5 3 3]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.24664 accuracy= 0.64400 time= 0.01584
+accuracy of each class= [0.23214285, 0.93617004, 0.4358975, 0.78145701, 0.69444442, 0.67741942, 0.61764705]
+Total time=13.783586740493774s
+
+name           : c16f_Model0
+logdir         : 
+dataset        : cora
+train_size     : 1.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [2 2 7 6 6 2 2]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.71247 accuracy= 0.51000 time= 0.02100
+accuracy of each class= [0.017241379, 0.0, 0.93421066, 0.70303017, 0.68571436, 0.034482758, 0.60714287]
+Total time=9.678874969482422s
+
+name           : c16c_Model0
+logdir         : 
+dataset        : cora
+train_size     : 1.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [2 2 7 6 6 2 2]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.52333 accuracy= 0.60000 time= 0.01907
+accuracy of each class= [0.086206898, 0.73333323, 0.94736856, 0.66060591, 0.80000013, 0.10344828, 0.67857146]
+Total time=11.637511730194092s
+
+name           : c16c16c_Model0
+logdir         : 
+dataset        : cora
+train_size     : 1.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [2 2 7 6 6 2 2]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.11740 accuracy= 0.67400 time= 0.01858
+accuracy of each class= [0.68965518, 0.79999995, 0.90789491, 0.63636351, 0.72857153, 0.43103451, 0.39285716]
+Total time=13.76280665397644s
+
+name           : c16f_Model0
+logdir         : 
+dataset        : cora
+train_size     : 1.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 4  2  5 11  2  2  1]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.83034 accuracy= 0.45400 time= 0.01653
+accuracy of each class= [0.45588231, 0.097560979, 0.75, 0.90476191, 0.02352941, 0.096153848, 0.055555556]
+Total time=9.34374189376831s
+
+name           : c16c_Model0
+logdir         : 
+dataset        : cora
+train_size     : 1.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 4  2  5 11  2  2  1]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.68501 accuracy= 0.51400 time= 0.01795
+accuracy of each class= [0.32352939, 0.21951219, 0.86956525, 0.96031743, 0.070588231, 0.26923075, 0.1388889]
+Total time=10.967062950134277s
+
+name           : c16c16c_Model0
+logdir         : 
+dataset        : cora
+train_size     : 1.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 4  2  5 11  2  2  1]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.45903 accuracy= 0.56400 time= 0.01664
+accuracy of each class= [0.58823526, 0.24390246, 0.93478274, 0.87301588, 0.094117641, 0.38461539, 0.22222219]
+Total time=12.610055208206177s
+
+name           : c16f_Model0
+logdir         : 
+dataset        : cora
+train_size     : 1.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [4 2 2 8 5 3 3]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.63621 accuracy= 0.52200 time= 0.01234
+accuracy of each class= [0.40677968, 0.054054052, 0.1081081, 0.7904194, 0.59210533, 0.65454549, 0.4375]
+Total time=9.701567649841309s
+
+name           : c16c_Model0
+logdir         : 
+dataset        : cora
+train_size     : 1.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [4 2 2 8 5 3 3]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.45948 accuracy= 0.64200 time= 0.01522
+accuracy of each class= [0.77966112, 0.35135135, 0.27027026, 0.76047927, 0.73684222, 0.69090915, 0.65625]
+Total time=11.35502815246582s
+
+name           : c16c16c_Model0
+logdir         : 
+dataset        : cora
+train_size     : 1.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [4 2 2 8 5 3 3]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.09087 accuracy= 0.72200 time= 0.01451
+accuracy of each class= [0.62711871, 0.72972977, 0.86486495, 0.68263495, 0.6973685, 0.69090915, 0.875]
+Total time=14.285258531570435s
+
+name           : c16f_Model0
+logdir         : 
+dataset        : cora
+train_size     : 1.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [5 2 4 5 5 3 3]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.56060 accuracy= 0.62400 time= 0.01625
+accuracy of each class= [0.76712328, 0.055555556, 0.75324667, 0.77397269, 0.45555559, 0.63636363, 0.30434784]
+Total time=9.550593376159668s
+
+name           : c16c_Model0
+logdir         : 
+dataset        : cora
+train_size     : 1.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [5 2 4 5 5 3 3]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.31423 accuracy= 0.72200 time= 0.01573
+accuracy of each class= [0.82191783, 0.55555558, 0.87012982, 0.72602737, 0.65555561, 0.67272723, 0.52173913]
+Total time=11.882487297058105s
+
+name           : c16c16c_Model0
+logdir         : 
+dataset        : cora
+train_size     : 1.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [5 2 4 5 5 3 3]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.00500 accuracy= 0.73600 time= 0.01502
+accuracy of each class= [0.75342464, 0.69444442, 0.92207783, 0.5958904, 0.82222217, 0.74545449, 0.65217394]
+Total time=14.530517816543579s
+
+name           : c16f_Model0
+logdir         : 
+dataset        : cora
+train_size     : 1.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [4 2 3 8 3 6 1]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.73773 accuracy= 0.50800 time= 0.01597
+accuracy of each class= [0.32051286, 0.54761904, 0.78571439, 0.65753424, 0.30952379, 0.52830189, 0.037037037]
+Total time=9.648279666900635s
+
+name           : c16c_Model0
+logdir         : 
+dataset        : cora
+train_size     : 1.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [4 2 3 8 3 6 1]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.44558 accuracy= 0.67800 time= 0.01376
+accuracy of each class= [0.57692313, 0.52380955, 0.95714307, 0.80136997, 0.54761904, 0.7735849, 0.037037037]
+Total time=11.868607759475708s
+
+name           : c16c16c_Model0
+logdir         : 
+dataset        : cora
+train_size     : 1.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [4 2 3 8 3 6 1]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.40523 accuracy= 0.66400 time= 0.01544
+accuracy of each class= [0.64102572, 0.5714286, 0.94285733, 0.77397269, 0.55952382, 0.47169814, 0.25925925]
+Total time=13.656220436096191s
+
+name           : c16f_Model0
+logdir         : 
+dataset        : cora
+train_size     : 1.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [4 2 5 9 4 1 2]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.70858 accuracy= 0.53400 time= 0.01275
+accuracy of each class= [0.60869557, 0.046511628, 0.79268295, 0.84967303, 0.31944445, 0.0, 0.21739131]
+Total time=9.576489210128784s
+
+name           : c16c_Model0
+logdir         : 
+dataset        : cora
+train_size     : 1.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [4 2 5 9 4 1 2]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.56547 accuracy= 0.66000 time= 0.01335
+accuracy of each class= [0.68115932, 0.74418604, 0.8780489, 0.84967303, 0.48611113, 0.0, 0.60869569]
+Total time=10.551697492599487s
+
+name           : c16c16c_Model0
+logdir         : 
+dataset        : cora
+train_size     : 1.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [4 2 5 9 4 1 2]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.58764 accuracy= 0.62000 time= 0.01422
+accuracy of each class= [0.60869557, 0.81395346, 0.84146351, 0.80392134, 0.375, 0.017241379, 0.56521744]
+Total time=13.252017259597778s
+
+name           : c16f_Model0
+logdir         : 
+dataset        : cora
+train_size     : 1.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [1 2 6 9 7 1 1]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.67571 accuracy= 0.50600 time= 0.01203
+accuracy of each class= [0.014084508, 0.29999998, 0.77777767, 0.86538446, 0.82666665, 0.015873017, 0.0]
+Total time=9.555863857269287s
+
+name           : c16c_Model0
+logdir         : 
+dataset        : cora
+train_size     : 1.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [1 2 6 9 7 1 1]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.44355 accuracy= 0.62000 time= 0.01301
+accuracy of each class= [0.014084508, 0.9000001, 0.92592585, 0.76923066, 0.86666656, 0.23809524, 0.56097555]
+Total time=10.878846883773804s
+
+name           : c16c16c_Model0
+logdir         : 
+dataset        : cora
+train_size     : 1.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [1 2 6 9 7 1 1]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.23966 accuracy= 0.64600 time= 0.02175
+accuracy of each class= [0.070422538, 0.85000008, 0.90740722, 0.71794868, 0.89333326, 0.41269842, 0.73170722]
+Total time=15.4248046875s
+
+name           : c16f_Model0
+logdir         : 
+dataset        : cora
+train_size     : 1.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [1 3 5 4 7 6 1]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.77164 accuracy= 0.47600 time= 0.01240
+accuracy of each class= [0.014084508, 0.5, 0.86111104, 0.33333337, 0.80246925, 0.84444445, 0.0]
+Total time=11.11103105545044s
+
+name           : c16c_Model0
+logdir         : 
+dataset        : cora
+train_size     : 1.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [1 3 5 4 7 6 1]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.58334 accuracy= 0.57200 time= 0.03175
+accuracy of each class= [0.028169015, 0.9000001, 0.87499988, 0.40384617, 0.91358036, 0.79999995, 0.34285715]
+Total time=13.089755535125732s
+
+name           : c16c16c_Model0
+logdir         : 
+dataset        : cora
+train_size     : 1.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [1 3 5 4 7 6 1]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.68788 accuracy= 0.54200 time= 0.02071
+accuracy of each class= [0.042253524, 0.85000008, 0.90277767, 0.28846157, 0.92592603, 0.75555557, 0.42857143]
+Total time=16.518856525421143s
+
+name           : c16f_Model0
+logdir         : 
+dataset        : cora
+train_size     : 1.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 3  3  1 11  3  4  2]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.79097 accuracy= 0.43400 time= 0.01558
+accuracy of each class= [0.27941179, 0.52777773, 0.0, 0.9205299, 0.19718309, 0.42307696, 0.10526316]
+Total time=10.852882623672485s
+
+name           : c16c_Model0
+logdir         : 
+dataset        : cora
+train_size     : 1.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 3  3  1 11  3  4  2]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.59607 accuracy= 0.51400 time= 0.01368
+accuracy of each class= [0.54411757, 0.72222227, 0.059523802, 0.91390735, 0.1830986, 0.71153849, 0.02631579]
+Total time=13.666952133178711s
+
+name           : c16c16c_Model0
+logdir         : 
+dataset        : cora
+train_size     : 1.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 3  3  1 11  3  4  2]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.31900 accuracy= 0.66200 time= 0.01667
+accuracy of each class= [0.60294116, 0.69444448, 0.89285713, 0.84768212, 0.22535209, 0.84615391, 0.052631579]
+Total time=16.527331590652466s
+
+name           : c16f_Model0
+logdir         : 
+dataset        : cora
+train_size     : 1.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 1  2  2 13  5  3  1]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.73933 accuracy= 0.47200 time= 0.01281
+accuracy of each class= [0.0, 0.43181822, 0.32098764, 0.95731741, 0.15492958, 0.5, 0.0]
+Total time=10.928980827331543s
+
+name           : c16c_Model0
+logdir         : 
+dataset        : cora
+train_size     : 1.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 1  2  2 13  5  3  1]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.54625 accuracy= 0.59200 time= 0.02086
+accuracy of each class= [0.05084746, 0.81818193, 0.67901236, 0.96951252, 0.26760563, 0.52173913, 0.0]
+Total time=13.240402221679688s
+
+name           : c16c16c_Model0
+logdir         : 
+dataset        : cora
+train_size     : 1.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 1  2  2 13  5  3  1]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.39803 accuracy= 0.64400 time= 0.02822
+accuracy of each class= [0.06779661, 0.88636374, 0.7283951, 0.81097585, 0.50704223, 0.69565219, 0.54285711]
+Total time=16.622976779937744s
+
+name           : c16f_Model0
+logdir         : 
+dataset        : cora
+train_size     : 1.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 2  3  2 11  5  3  1]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.72866 accuracy= 0.47600 time= 0.01434
+accuracy of each class= [0.0, 0.55263162, 0.39999998, 0.90370381, 0.5, 0.37313434, 0.0]
+Total time=11.170586109161377s
+
+name           : c16c_Model0
+logdir         : 
+dataset        : cora
+train_size     : 1.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 2  3  2 11  5  3  1]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.44458 accuracy= 0.62800 time= 0.01404
+accuracy of each class= [0.16666666, 0.71052635, 0.65714294, 0.82962978, 0.76190472, 0.67164177, 0.22499999]
+Total time=13.502748727798462s
+
+name           : c16c16c_Model0
+logdir         : 
+dataset        : cora
+train_size     : 1.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [ 2  3  2 11  5  3  1]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.21969 accuracy= 0.70600 time= 0.01424
+accuracy of each class= [0.19696969, 0.78947377, 0.81428587, 0.78518528, 0.8214286, 0.77611941, 0.65000004]
+Total time=17.358584880828857s
+
+name           : c16f_Model0
+logdir         : 
+dataset        : cora
+train_size     : 1.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [3 2 3 9 5 2 3]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.57128 accuracy= 0.56600 time= 0.01568
+accuracy of each class= [0.22222222, 0.17647058, 0.65753424, 0.8461538, 0.69117641, 0.19999999, 0.56097555]
+Total time=10.939245700836182s
+
+name           : c16c_Model0
+logdir         : 
+dataset        : cora
+train_size     : 1.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [3 2 3 9 5 2 3]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.42715 accuracy= 0.65800 time= 0.01884
+accuracy of each class= [0.25396824, 0.76470584, 0.7945205, 0.80769217, 0.7352941, 0.41538459, 0.63414627]
+Total time=14.288693904876709s
+
+name           : c16c16c_Model0
+logdir         : 
+dataset        : cora
+train_size     : 1.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [3 2 3 9 5 2 3]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.28848 accuracy= 0.66000 time= 0.01802
+accuracy of each class= [0.20634921, 0.85294116, 0.87671232, 0.76923078, 0.67647046, 0.46153837, 0.68292677]
+Total time=17.652426719665527s
+
+name           : c16f_Model0
+logdir         : 
+dataset        : cora
+train_size     : 1.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [2 1 9 5 3 3 4]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.92002 accuracy= 0.31000 time= 0.01661
+accuracy of each class= [0.26666665, 0.0, 0.98529404, 0.25324672, 0.21126761, 0.045454539, 0.39285716]
+Total time=11.15267539024353s
+
+name           : c16c_Model0
+logdir         : 
+dataset        : cora
+train_size     : 1.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [2 1 9 5 3 3 4]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.72664 accuracy= 0.49600 time= 0.01815
+accuracy of each class= [0.31999996, 0.0, 0.98529404, 0.57792199, 0.49295771, 0.25757575, 0.5714286]
+Total time=12.81981611251831s
+
+name           : c16c16c_Model0
+logdir         : 
+dataset        : cora
+train_size     : 1.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [2 1 9 5 3 3 4]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.50778 accuracy= 0.59000 time= 0.01907
+accuracy of each class= [0.29333332, 0.02631579, 0.97058815, 0.77922058, 0.59154928, 0.39393938, 0.64285713]
+Total time=15.923577070236206s
+
+name           : c16f_Model0
+logdir         : 
+dataset        : cora
+train_size     : 1.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [3 3 8 7 3 2 1]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.68471 accuracy= 0.50000 time= 0.01586
+accuracy of each class= [0.72131139, 0.52380955, 0.97297305, 0.51388878, 0.45333326, 0.065573774, 0.0]
+Total time=11.218732833862305s
+
+name           : c16c_Model0
+logdir         : 
+dataset        : cora
+train_size     : 1.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [3 3 8 7 3 2 1]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.45046 accuracy= 0.66400 time= 0.01430
+accuracy of each class= [0.8852458, 0.69047618, 1.0000001, 0.72916639, 0.51999992, 0.50819671, 0.0]
+Total time=13.25399398803711s
+
+name           : c16c16c_Model0
+logdir         : 
+dataset        : cora
+train_size     : 1.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [3 3 8 7 3 2 1]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.21696 accuracy= 0.69800 time= 0.02215
+accuracy of each class= [0.78688514, 0.71428567, 0.98648661, 0.77083308, 0.53333324, 0.63934422, 0.18604651]
+Total time=16.552045106887817s
+
+name           : c16f_Model0
+logdir         : 
+dataset        : cora
+train_size     : 1.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [7 3 2 8 3 3 1]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.82099 accuracy= 0.43200 time= 0.01932
+accuracy of each class= [0.92156845, 0.34285715, 0.0, 0.57738096, 0.33333331, 0.59677428, 0.0]
+Total time=11.110461473464966s
+
+name           : c16c_Model0
+logdir         : 
+dataset        : cora
+train_size     : 1.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [7 3 2 8 3 3 1]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.53914 accuracy= 0.55200 time= 0.01475
+accuracy of each class= [0.92156845, 0.57142854, 0.11538462, 0.815476, 0.34782606, 0.62903231, 0.0]
+Total time=13.702724695205688s
+
+name           : c16c16c_Model0
+logdir         : 
+dataset        : cora
+train_size     : 1.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [7 3 2 8 3 3 1]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.17142 accuracy= 0.70400 time= 0.01803
+accuracy of each class= [0.88235271, 0.71428573, 0.78205138, 0.82738078, 0.42028978, 0.80645168, 0.081081077]
+Total time=14.703247785568237s
+
+name           : c16f_Model0
+logdir         : 
+dataset        : cora
+train_size     : 1.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [4 4 5 7 2 3 2]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.65349 accuracy= 0.55400 time= 0.01518
+accuracy of each class= [0.54838711, 0.55555552, 0.76623362, 0.87349403, 0.012987013, 0.24489798, 0.041666664]
+Total time=11.061978578567505s
+
+name           : c16c_Model0
+logdir         : 
+dataset        : cora
+train_size     : 1.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [4 4 5 7 2 3 2]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.45492 accuracy= 0.67600 time= 0.01606
+accuracy of each class= [0.67741942, 0.79999995, 0.88311678, 0.8975904, 0.051948052, 0.53061229, 0.54166663]
+Total time=13.686233758926392s
+
+name           : c16c16c_Model0
+logdir         : 
+dataset        : cora
+train_size     : 1.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [4 4 5 7 2 3 2]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.24764 accuracy= 0.67600 time= 0.02103
+accuracy of each class= [0.74193555, 0.79999995, 0.85714275, 0.81927717, 0.11688311, 0.61224496, 0.625]
+Total time=16.291621208190918s
+
+name           : c16f_Model0
+logdir         : 
+dataset        : cora
+train_size     : 1.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [4 5 4 7 3 3 1]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.77662 accuracy= 0.45200 time= 0.01420
+accuracy of each class= [0.34375, 0.90697676, 0.73972601, 0.61971843, 0.07692308, 0.23728812, 0.073170736]
+Total time=10.438307762145996s
+
+name           : c16c_Model0
+logdir         : 
+dataset        : cora
+train_size     : 1.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [4 5 4 7 3 3 1]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.64712 accuracy= 0.56600 time= 0.02383
+accuracy of each class= [0.625, 0.97674423, 0.83561635, 0.59859169, 0.14102565, 0.50847459, 0.34146345]
+Total time=13.155908823013306s
+
+name           : c16c16c_Model0
+logdir         : 
+dataset        : cora
+train_size     : 1.0
+learning_rate  : 0.01
+feature        : bow
+logging        : False
+labels of each class :  [4 5 4 7 3 3 1]
+relu_enable
+training...
+Optimization Finished!
+Test set results: cost= 1.99021 accuracy= 0.54400 time= 0.01305
+accuracy of each class= [0.59375, 0.95348841, 0.87671232, 0.50000006, 0.15384616, 0.47457629, 0.43902439]
+Total time=13.970432043075562s
+
+REPEAT	20
+DATASET 	train_size	valid_size	RESULTS 	STD     	TIME    	NAME    
+cora    	1.0%    	20%     	0.483900	0.063168	10.01   	c16f_Model0
+cora    	1.0%    	20%     	0.597199	0.065505	12.14   	c16c_Model0
+cora    	1.0%    	20%     	0.639199	0.064608	14.83   	c16c16c_Model0
+[4 5 4 7 3 3 1] [0.329, 0.366, 0.612, 0.700, 0.405, 0.326, 0.165, ]	c16f_Model0
+[4 5 4 7 3 3 1] [0.434, 0.673, 0.721, 0.742, 0.507, 0.480, 0.351, ]	c16c_Model0
+[4 5 4 7 3 3 1] [0.488, 0.729, 0.850, 0.698, 0.545, 0.558, 0.470, ]	c16c16c_Model0
